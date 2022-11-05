@@ -30,9 +30,9 @@ Test funtions.
 
 ```{r}
 vector2 = rep(11:13, 3)
-if(!exists("vectorSum")) { # Check if user-defined function exists
+if(!exists("MyFunctions/vectorSum")) { # Check if user-defined function exists
  
-  source("vectorSum.R")    # Apply source function
+  source("MyFunctions/vectorSum.R")    # Apply source function
 }
 
 vectorSum(vector2)
