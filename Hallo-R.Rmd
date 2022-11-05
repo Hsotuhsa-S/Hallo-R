@@ -29,6 +29,11 @@ length(matrix2)
 Test funtions.
 
 ```{r}
+vector2 = rep(11:13, 3)
+if(!exists("vectorSum")) { # Check if user-defined function exists
+ 
+  source("vectorSum.R")    # Apply source function
+}
 
 vectorSum(vector2)
 
