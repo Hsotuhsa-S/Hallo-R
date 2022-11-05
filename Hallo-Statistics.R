@@ -71,6 +71,10 @@ str(artistData)
 # self made function.to convert all char col to factor.
 # Call function from another r script using source()
 source("MyFunctions/convertDFColCharToFactor.R")
+if(!exists("MyFunctions/convertDFColCharToFactor.R")) { # Check if user-defined function exists
+  
+  source("MyFunctions/convertDFColCharToFactor.R")    # Apply source function
+}
 artistData = df.char.as.factor(artistData)
 str(artistData)
 
